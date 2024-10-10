@@ -1,0 +1,16 @@
+{
+  "name": "texteditor",
+  "version": "1.0.0",
+  "description": "A simple text editor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mykull",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^32.2.0",
+    "electron-reloader": "^1.2.3"
+  }
+}
