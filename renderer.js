@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const handleDocumentChange = (filePath, data = "") => {
         el.docDisplayName.innerHTML = path.parse(filePath).base;
         el.fileTextArea.removeAttribute('disabled');
-        el.fileTextArea.value = data;
+        el.fileTextArea.innerHTML = data;
         el.fileTextArea.focus();
     }
 
@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ipcRenderer.send("open-document-triggered");
     });
 
-    el.fileTextArea.addEventListener('input', (e) => {
+    el.fileTextArea.addEventListener('change', (e) => {
         ipcRenderer.send("file-changed", e.target.value);
     });
 

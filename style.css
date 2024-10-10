@@ -35,7 +35,7 @@ main {
     flex: 1;
 }
 
-main textarea {
+main pre {
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     padding: 0px;
